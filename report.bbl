@@ -1,0 +1,42 @@
+\begin{thebibliography}{1}
+
+\bibitem{caire03}
+G.~Caire and S.~Shamai, ``On the achievable throughput of a multi-antenna
+  {Gaussian} broadcast channel,'' {\em IEEE Trans.\ Inf.\ Theory}, vol.~49,
+  no.~7, pp.~1691--1706, 2003.
+
+\bibitem{weingarten06}
+H.~Weingarten, Y.~Steinberg, and S.~Shamai, ``The capacity region of the
+  {Gaussian} multiple-input multiple-output broadcast channel,'' {\em IEEE
+  Trans.\ Inf.\ Theory}, vol.~52, no.~9, pp.~3936--3964, 2006.
+
+\bibitem{foschini96}
+G.~J. Foschini, ``Layered space-time architecture for wireless communications
+  in a fading environment when using multi-element antennas,'' {\em Bell Labs
+  Technical Journal}, vol.~1, no.~2, pp.~41--59, 1996.
+
+\bibitem{tarokh98}
+V.~Tarokh, N.~Seshadri, and A.~R. Calderbank, ``Space-time codes for high data
+  rate wireless communication: performance analysis and code construction,''
+  {\em IEEE Trans.\ Inf.\ Theory}, vol.~44, no.~2, pp.~744--765, 1998.
+
+\bibitem{alamouti98}
+S.~M. Alamouti, ``A simple transmit diversity technique for wireless
+  communications,'' {\em IEEE J.\ Sel.\ Areas Commun.}, vol.~16, no.~8,
+  pp.~1451--1458, 1998.
+
+\bibitem{tarokh99}
+V.~Tarokh, H.~Jafarkhani, and A.~R. Calderbank, ``Space-time block codes from
+  orthogonal designs,'' {\em IEEE Trans.\ Inf.\ Theory}, vol.~45, no.~5,
+  pp.~1456--1458, 1999.
+
+\bibitem{wang00}
+Z.~Wang and G.~B. Giannakis, ``Wireless multicarrier communications,'' {\em
+  IEEE Signal Processing Mag.}, vol.~17, no.~3, pp.~29--48, 2000.
+
+\bibitem{wang04}
+Z.~Wang, X.~Ma, and G.~B. Giannakis, ``{OFDM} or single-carrier block
+  transmissions?,'' {\em IEEE Trans.\ Commun.}, vol.~52, no.~3, pp.~380--394,
+  2004.
+
+\end{thebibliography}

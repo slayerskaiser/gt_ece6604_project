@@ -1,0 +1,21 @@
+% Section II: STBC
+
+With the carrier frequencies used in current 3.9G and 4G standards, only up to two receive antennas can be used while maintaining spatial diversity. Thus, it is necessary to use transmitter diversity, which uses multiple transmit antennas to provide the receiver with multiple uncorrelated copies of the same signal. Simple forms of transmit diversity include selective transmit diversity for time division duplexed systems as well as time division transmit diversity, time-switched transmit diversity, and delay transmit diversity for frequency division duplexed systems. More complex forms of transmit diversity use space-time, space-frequency, or space-time-frequency coding.
+
+For MIMO systems, knowledge of the channel state information (CSI) at the transmitter (CSIT) and at the receiver (CSIR) is necessary to choose a diversity technique~\cite{caire03,weingarten06}. In general, the channel can be estimated at the receiver using various techniques, so the knowledge of the CSIR can be assumed. At the transmitter, if the CSIT is known, then beamforming techniques are used to assure both the diversity gain and the array gain. However, without CSIT, space-time (ST) codes can still be used to assure the diversity gain. ST codes are a general class of error correcting codes in which the control symbols are inserted in both spatial and temporal domains.
+
+The multi-layered space-time architecture was introduced by Foschini in~\cite{foschini96}. Later, Space-Time Trellis Codes (STTrC)~\cite{tarokh98} were proposed, which provide the optimal tradeoff between constellation size, data rate, diversity gain, and trellis complexity but have a greater decoding complexity. Regarding encoding and decoding complexity, Alamouti~\cite{alamouti98} introduced a simple repetition diversity scheme for two transmit antennas with maximum likelihood combining at the receiver. Alamouti's transmit diversity scheme provides a maximum diversity gain and no coding gain for a minimum decoding complexity. Later, Tarokh et al.\ generalized the Alamouti code for an arbitrary number of transmit antennas as the Space-Time Block Code (STBC)~\cite{tarokh99}.
+
+The remainder of this section presents a mathematical model for a general MIMO system using STBC and details ML decoding methods for both linear and widely linear coding schemes. Additionally, some examples of STBCs are reviewed with emphasis on the code transmission matrix and the code parameters.
+
+\subsection{Space-Time Block Coded MIMO System}
+This paper considers digital wireless transmissions through a general MIMO system with $N_T$ transmit antennas and $N_R$ receive antennas, consisting of a space-time encoder, a Rayleigh block-fading channel with AWGN, and a space-time decoder with MRC and ML decoding. The channel is modeled as a discrete-time baseband-equivalent channel. This study assumes single-carrier modulated block transmission with zero padding is used to suppress intersymbol interference, see~\cite{wang00,wang04}.
+
+\subsubsection{Space-Time Encoding}
+
+\subsubsection{Space-Time Decoding}
+
+\subsection{Examples of STBCs}
+
+\subsubsection{Alamouti's STBC}
+The Alamouti STBC uses two transmit antennas and any number of receive antennas.

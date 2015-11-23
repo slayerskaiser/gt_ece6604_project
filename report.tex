@@ -1,0 +1,79 @@
+\documentclass[12pt,onecolumn]{IEEEtran}
+
+\title{ECE 6604 Design Project:\\ Performance of STBC Schemes over Rayleigh Block-Fading Channel for 4G MIMO}
+\author{Abhishek~Obla~Hema and~Klaus~Okkelberg}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  Wireless mobile networks are a part of everyday life, but they have limited range and data rate to satisfy the demands of the exponentially increasing number of wireless mobile devices. In particular, high energy consumption and spectrum contraints mean that current 3.9G technology will not be able to satisfy the demands of mobile data traffic in the near future. To overcome these limitations, various diversity schemes are used, which fall into six categories, namely space, angle, polarization, frequency, and multipath. One implementation of a diversity scheme is to use MIMO links, which use multiple transmit and receive antennas to increase time and spatial diversity, the result of which is to increase range and data rate without requiring additional transmit power or bandwidth. To this end, this paper investigates the performance of space-time block coding (STBC) schemes for up to eight transmit antennas and up to two receive antennas, in line with current 4G standards for cellular phones. These schemes are analyzed for their spectral efficiency and bit error rates for transmitting data modulated using BPSK, QPSK, 16-QAM, and 64-QAM over a Rayleigh block-fading channel with additive white Gaussian noise. This is accomplished through software simulation in Matlab.
+\end{abstract}
+
+\section{Introduction}
+%The current generation of wireless communication standards have to comply with ITU-R IMT-Advanced requirements to be considered 4G. These include 3GPP Long Term Evolution Advanced (LTE-A) and IEEE 802.16m WiMAX Release 2. However, these 4G standards are not widely deployed, and current 
+%The fastest cellular technologies in current use are primarily 3.9G, including the 3GPP Long Term Evolution (LTE) and IEEE 802.16e mobile WiMAX standards. 
+
+The paper is organized as follows. Section II provides background on diversity-increasing schemes used in current 3.9G and 4G standards. Section III discusses current STBC schemes. Section IV explains the simulation methodology. The simulation results are presented and analyzed in section V. Finally, section VI summarizes the results and discusses how they can be applied to future 5G technologies. The simulation code used for this paper is included in the appendix.
+
+\section{Background}
+\input{sectionI}
+
+\section{Space-Time Block Coding}
+\input{sectionII}
+
+\section{Methodology}
+
+\section{Results}
+
+\section{Summary}
+
+\bibliographystyle{ieeetr}
+\bibliography{report}
+
+\appendix
+\section{Alamouti Encoding}
+\section{Alamouti Decoding}
+
+%\begin{thebibliography}{99}
+%
+%\bibitem{gupta}
+%  A. Gupta, H. S. Dhillon, S. Vishwanath, and J. G. Andrews, ``Downlink MIMO HetNets with Load Balancing'' \emph{IEEE Transactions on Communications}, Vol. 62, No. 11, pp. 4052-67, Nov. 2014.
+%
+%\bibitem{andrews}
+%  J. G. Andrews, S. Buzzi, W. Choi, S. Hanly, A. Lozano, A. Soong, and J. C. Zhang, ``What will 5G be?'', \emph{IEEE Journal on Sel. Areas in Communications}, Vol. 32, No. 6, pp. 1065-82, June 2014.
+%
+%\bibitem{dhillon}
+%  H. S. Dhillon, M. Kountouris and J. G. Andrews, ``Downlink MIMO HetNets: Modeling, Ordering Results and Performance Analysis'', \emph{IEEE Transactions on Wireless Communications}, vol. 12, no. 10, pp. 5208-5222, Oct. 2013.
+%
+%\bibitem{pappas}
+%  N. Pappas and M. Kountouris, ``Performance Analysis of Distributed Cooperation under Uncoordinated Network Interference'', \emph{IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2014}, Florence, Italy, May 4-9, 2014.
+%
+%\bibitem{goonewardena}
+%  M. Goonewardena, X. Jin, W. Ajib and H. Elbiaze, ``Competition vs. Cooperation: A Game-Theoretic Decision Analysis for MIMO HetNets'', \emph{IEEE International Conference on Communications, 2014}, Sydney, Australia, June 10-14, 2014.
+%
+%\bibitem{hoydis}
+%  J. Hoydis, S. ten Brink, and M. Debbah, ``Massive MIMO in the UL/DL of cellular networks: How many antennas do we need?'' \emph{IEEE J. Sel. Areas Commun.}, vol. 31, no. 2, pp. 160–171, Feb. 2013.
+%
+%\bibitem{hoydis2}
+%  J. Hoydis, C. Hoek, T. Wild, and S. ten Brink, ``Channel measurements for large antenna arrays,'' in \emph{Proc. IEEE International Symposium on Wireless Communication Systems}, Paris, France, Aug. 2012, pp. 811–815.
+%
+%\bibitem{bjornson}
+%  E. Bj\"ornson, M. Kountouris, and M. Debbah, ``Massive MIMO and small cells: Improving energy efficiency by optimal soft-cell coordination,'' in \emph{International Conference on Telecommunications}, Casablanca, Morocco, May 2013.
+%
+%\bibitem{stuber}
+%  St\"uber, G. L., Barry, J., McLaughlin, S. W., Li, Y., Ingram, M.A., and Pratt, T. G., ``Broadband MIMO-OFDM Wireless Communications,'' \emph{IEEE Proceedings}, pp. 271-294, April 2004.
+%
+%\bibitem{geirhofer}
+%  S. Geirhofer and P. Gaal, ``Coordinated Multi-Point Transmission in 3GPP LTE Heterogeneous Networks,'' \emph{Proc. IEEE GLOBECOM Wksp. Emerging Technologies for LTEAdvanced and Beyond-4G}, Anaheim, CA, Dec. 2012.
+%
+%\bibitem{bhushan}
+%  N. Bhushan, Junyi Li, D. Malladi, R. Gilmore, D. Brenner, A. Damnjanovic, R. Sukhavasi, C. Patel, S. Geirhofer, ``Network densification: the dominant theme for wireless evolution into 5G,'' in \emph{Communications Magazine, IEEE}, vol.52, no.2, pp.82-89, February 2014.
+%
+%\bibitem{Obaidat}
+%  \emph{Modeling and Simulation of Computer Networks and Systems: Methodologies and Applications}, M. S. Obaidat, F. Zarai, and P. Nicopolitidis, Ed., Waltham, MA: Elsevier Science, 2015.
+%
+%\end{thebibliography}
+
+\end{document}
