@@ -1,0 +1,218 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=prv_report 2015.11.23)  23 NOV 2015 12:18
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**&prv_report _region_.tex
+(./_region_.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 2 languages loaded.
+CUSTOMISED FORMAT. Preloaded files:
+        .
+IEEEtran.cls    2014/09/17 V1.8a by Michael Shell
+  ot1ptm.fd    2001/06/04 font definitions for OT1/ptm.
+  ot1pcr.fd    2001/06/04 font definitions for OT1/pcr.
+  ot1phv.fd    2001/06/04 scalable font definitions for OT1/phv.
+        .
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+(/usr/share/texmf-site/tex/latex/preview/preview.sty
+Package: preview 2010/02/14 11.88 (AUCTeX/preview-latex)
+
+(/usr/share/texmf-site/tex/latex/preview/prtightpage.def
+\PreviewBorder=\dimen125
+)
+(/usr/share/texmf-site/tex/latex/preview/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count94
+\hfuzz=\dimen126
+(/usr/share/texmf-site/tex/latex/preview/prauctex.cfg))
+(/usr/share/texmf-site/tex/latex/preview/prfootnotes.def)
+\pr@snippet=\count95
+\pr@box=\box28
+\pr@output=\toks15
+
+Preview: Fontsize 12pt
+Preview: PDFoutput 1
+)
+-- Lines per column: 50 (exact).
+ !name(sectionII.tex) !offset(-8) 
+
+LaTeX Warning: Citation `caire03' on page 1 undefined on input line 13.
+
+
+LaTeX Warning: Citation `weingarten06' on page 1 undefined on input line 13.
+
+
+LaTeX Warning: Citation `foschini96' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Citation `tarokh98' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Citation `alamouti98' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Citation `tarokh99' on page 1 undefined on input line 15.
+
+! Preview: Snippet 1 started.
+<-><->
+      
+l.19 \subsection
+                {Space-Time Block Coded MIMO System}
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+! Preview: Snippet 1 ended.(538305+162393x33816576).
+<-><->
+      
+l.19 ...ection{Space-Time Block Coded MIMO System}
+                                                  
+Not a real error.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+! Preview: Snippet 2 started.
+<-><->
+      
+l.20 ...sions through a general MIMO system with $
+                                                  N_T$ transmit antennas and...
+
+Not a real error.
+
+! Preview: Snippet 2 ended.(537395+117964x1051081).
+<-><->
+      
+l.20 ...s through a general MIMO system with $N_T$
+                                                   transmit antennas and $N_...
+
+Not a real error.
+
+[2]
+! Preview: Snippet 3 started.
+<-><->
+      
+l.20 ... system with $N_T$ transmit antennas and $
+                                                  N_R$ receive antennas, con...
+
+Not a real error.
+
+! Preview: Snippet 3 ended.(537395+117964x1072197).
+<-><->
+      
+l.20 ...tem with $N_T$ transmit antennas and $N_R$
+                                                   receive antennas, consist...
+
+Not a real error.
+
+[3]
+
+LaTeX Warning: Citation `wang00' on page 1 undefined on input line 20.
+
+
+LaTeX Warning: Citation `wang04' on page 1 undefined on input line 20.
+
+! Preview: Snippet 4 started.
+<-><->
+      
+l.22 \subsubsection
+                   {Space-Time Encoding}
+Not a real error.
+
+! Preview: Snippet 4 ended.(538305+162393x8675622).
+<-><->
+      
+l.22 \subsubsection{Space-Time Encoding}
+                                        
+Not a real error.
+
+[4
+
+]
+! Preview: Snippet 5 started.
+<-><->
+      
+l.24 \subsubsection
+                   {Space-Time Decoding}
+Not a real error.
+
+! Preview: Snippet 5 ended.(538305+162393x8718869).
+<-><->
+      
+l.24 \subsubsection{Space-Time Decoding}
+                                        
+Not a real error.
+
+[5
+
+]
+! Preview: Snippet 6 started.
+<-><->
+      
+l.26 \subsection
+                {Examples of STBCs}
+Not a real error.
+
+! Preview: Snippet 6 ended.(538305+162393x33816576).
+<-><->
+      
+l.26 \subsection{Examples of STBCs}
+                                   
+Not a real error.
+
+[6
+
+]
+! Preview: Snippet 7 started.
+<-><->
+      
+l.28 \subsubsection
+                   {Alamouti's STBC}
+Not a real error.
+
+! Preview: Snippet 7 ended.(538305+142339x7247459).
+<-><->
+      
+l.28 \subsubsection{Alamouti's STBC}
+                                    
+Not a real error.
+
+[7
+
+]  !name(report.tex) !offset(41) 
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 186 strings out of 493912
+ 2515 string characters out of 6161857
+ 71326 words of memory out of 5000000
+ 4548 multiletter control sequences out of 15000+600000
+ 27297 words of font info for 62 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 22i,5n,22p,828b,120s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on _region_.pdf (7 pages, 29243 bytes).
+PDF statistics:
+ 41 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

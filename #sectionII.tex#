@@ -88,7 +88,24 @@ For QOSTBC, while the decoding is more complex than the diagonal decoding presen
 \subsection{Examples of STBCs}
 
 \subsubsection{Alamouti's STBC}
-The Alamouti STBC uses two transmit antennas and any number of receive antennas.
+The Alamouti STBC uses two transmit antennas and is described by the transmission matrix
+\[ \bm{G} = \begin{bmatrix} s_1 & s_2 \\ -s_2^\ast & s_1^\ast \end{bmatrix} . \]
+This code uses two time slots to transmit two symbols over two antennas, making this a $C(2,2,2)$. The two antennas are assumed to have equal transmit power of $\Omega_p/2$ since CSIT is unknown and so the sum of their powers equals the transmit power of a singular transmit antenna.
+
+For one receive antenna and assuming block-fading, the received symbols are
+\begin{gather}
+  y_1 = h_1 s_1 + h_2 s_2 + n_1 \\
+  y_2 = -h_1 s_2^\ast + h_2 s_1^\ast + n_2.
+\end{gather}
+Taking the complex conjugate of the second equation yields
+\begin{gather}
+  y_1 = h_1 s_1 + h_2 s_2 + n_1 \\
+  y_2^\ast = h_2^\ast s_1 - h_1^\ast s_2 + n_2^\ast,
+\end{gather}
+or in matrix form,
+\[ \begin{bmatrix} y_1 \\ y_2 \end{bmatrix} =
+\begin{bmatrix} h_1 & h_2 \\ h_2^\ast & -h_1^\ast \end{bmatrix}
+\begin{bmatrix} s_1 \\ s_2 \end{bmatrix} + \begin{bmatrix} n_1 \\ n_2^\ast \end{bmatrix}. \]
 
 %%% Local Variables:
 %%% mode: latex

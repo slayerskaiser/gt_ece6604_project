@@ -1,7 +1,19 @@
 \documentclass[12pt,onecolumn]{IEEEtran}
+\usepackage{mathtools}
+\usepackage{bm}
+
+\usepackage[nospace]{cite}
+\bibliographystyle{IEEEtran}
 
 \title{ECE 6604 Design Project:\\ Performance of STBC Schemes over Rayleigh Block-Fading Channel for 4G MIMO}
 \author{Abhishek~Obla~Hema and~Klaus~Okkelberg}
+
+\newcommand*\dif{\mathop{}\!\mathrm{d}}
+\newcommand{\trans}{^\text{T}}
+\newcommand{\herm}{^\text{H}}
+\newcommand{\order}[1]{\mathcal{O}(#1)}
+\DeclareMathOperator{\E}{E}
+\DeclareMathOperator{\trace}{trace}
 
 \begin{document}
 
@@ -29,7 +41,6 @@ The paper is organized as follows. Section II provides background on diversity-i
 
 \section{Summary}
 
-\bibliographystyle{ieeetr}
 \bibliography{report}
 
 \appendix

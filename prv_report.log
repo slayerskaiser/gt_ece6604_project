@@ -1,0 +1,213 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.8.5)  23 NOV 2015 12:18
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**&pdflatex prv_report.ini \nonstopmode\nofiles\PassOptionsToPackage{active,tig
+htpage,auctex}{preview}\AtBeginDocument{\ifx\ifPreview\undefined\RequirePackage
+[displaymath,floats,graphics,textmath,sections,footnotes]{preview}[2004/11/05]\
+fi} \input report.tex
+(./prv_report.ini
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texmf-dist/tex/latex/carlisle/mylatex.ltx)
+(/usr/share/texmf-dist/tex/latex/tools/.tex File ignored))
+No auxiliary output files.
+
+(./report.tex (/usr/share/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
+Document Class: IEEEtran 2014/09/17 V1.8a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 458.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+** ATTENTION: Single column mode is not typically used with IEEE publications.
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen105
+-- This is a 12 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <14> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <22> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <22> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 6.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 6.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 6.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+) )
+Beginning to dump on file prv_report.fmt
+ (preloaded format=prv_report 2015.11.23)
+6088 strings of total length 88143
+64649 memory locations dumped; current usage is 171&63328
+4387 multiletter control sequences
+\font\nullfont=nullfont
+\font\OMX/cmex/m/n/6=cmex10
+\font\tenln=line10
+\font\tenlnw=linew10
+\font\tencirc=lcircle10
+\font\tencircw=lcirclew10
+\font\OT1/cmr/m/n/5=cmr5
+\font\OT1/cmr/m/n/7=cmr7
+\font\OT1/cmr/m/n/10=cmr10
+\font\OML/cmm/m/it/5=cmmi5
+\font\OML/cmm/m/it/7=cmmi7
+\font\OML/cmm/m/it/10=cmmi10
+\font\OMS/cmsy/m/n/5=cmsy5
+\font\OMS/cmsy/m/n/7=cmsy7
+\font\OMS/cmsy/m/n/10=cmsy10
+\font\OT1/ptm/m/n/10=ptmr7t
+\font\OT1/ptm/m/n/12=ptmr7t at 12.0pt
+\font\OT1/ptm/m/n/6=ptmr7t at 6.0pt
+\font\OT1/ptm/b/n/6=ptmb7t at 6.0pt
+\font\OT1/ptm/m/it/6=ptmri7t at 6.0pt
+\font\OT1/ptm/b/it/6=ptmbi7t at 6.0pt
+\font\OT1/ptm/m/n/8=ptmr7t at 8.0pt
+\font\OT1/ptm/b/n/8=ptmb7t at 8.0pt
+\font\OT1/ptm/m/it/8=ptmri7t at 8.0pt
+\font\OT1/ptm/b/it/8=ptmbi7t at 8.0pt
+\font\OT1/ptm/m/n/9=ptmr7t at 9.0pt
+\font\OT1/ptm/b/n/9=ptmb7t at 9.0pt
+\font\OT1/ptm/m/it/9=ptmri7t at 9.0pt
+\font\OT1/ptm/b/it/9=ptmbi7t at 9.0pt
+\font\OT1/ptm/b/n/10=ptmb7t
+\font\OT1/ptm/m/it/10=ptmri7t
+\font\OT1/ptm/b/it/10=ptmbi7t
+\font\OT1/ptm/b/n/12=ptmb7t at 12.0pt
+\font\OT1/ptm/m/it/12=ptmri7t at 12.0pt
+\font\OT1/ptm/b/it/12=ptmbi7t at 12.0pt
+\font\OT1/ptm/m/n/14=ptmr7t at 14.0pt
+\font\OT1/ptm/b/n/14=ptmb7t at 14.0pt
+\font\OT1/ptm/m/it/14=ptmri7t at 14.0pt
+\font\OT1/ptm/b/it/14=ptmbi7t at 14.0pt
+\font\OT1/ptm/m/n/20=ptmr7t at 20.0pt
+\font\OT1/ptm/b/n/20=ptmb7t at 20.0pt
+\font\OT1/ptm/m/it/20=ptmri7t at 20.0pt
+\font\OT1/ptm/b/it/20=ptmbi7t at 20.0pt
+\font\OT1/ptm/m/n/22=ptmr7t at 22.0pt
+\font\OT1/ptm/b/n/22=ptmb7t at 22.0pt
+\font\OT1/ptm/m/it/22=ptmri7t at 22.0pt
+\font\OT1/ptm/b/it/22=ptmbi7t at 22.0pt
+\font\OT1/ptm/m/n/24=ptmr7t at 24.0pt
+\font\OT1/ptm/b/n/24=ptmb7t at 24.0pt
+\font\OT1/ptm/m/it/24=ptmri7t at 24.0pt
+\font\OT1/ptm/b/it/24=ptmbi7t at 24.0pt
+\font\OT1/cmr/m/n/12=cmr12
+\font\OT1/cmr/m/n/8=cmr8
+\font\OT1/cmr/m/n/6=cmr6
+\font\OML/cmm/m/it/12=cmmi12
+\font\OML/cmm/m/it/8=cmmi8
+\font\OML/cmm/m/it/6=cmmi6
+\font\OMS/cmsy/m/n/12=cmsy10 at 12.0pt
+\font\OMS/cmsy/m/n/8=cmsy8
+\font\OMS/cmsy/m/n/6=cmsy6
+\font\OT1/pcr/m/n/12=pcrr7t at 12.0pt
+\font\OT1/phv/m/n/12=phvr7t at 12.0pt
+26154 words of font info for 61 preloaded fonts
+14 hyphenation exceptions
+Hyphenation trie of length 6081 has 183 ops out of 35111
+  2 for language 1
+  181 for language 0
+0 words of pdfTeX memory
+0 indirect objects
+No pages of output.
+PDF statistics:
+ 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
