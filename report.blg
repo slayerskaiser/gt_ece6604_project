@@ -8,7 +8,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: report.bib
-I was expecting a `,' or a `}'---line 37 of file report.bib
+I was expecting a `,' or a `}'---line 78 of file report.bib
  : 
  : volume="49",
 (Error may have been on previous line)

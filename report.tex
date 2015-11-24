@@ -5,6 +5,17 @@
 \usepackage[nospace]{cite}
 \bibliographystyle{IEEEtran}
 
+\usepackage{MnSymbol}
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily,
+  numbers=left,
+  numberstyle=\small,
+  stepnumber=1,
+  frame=single,
+  breaklines=true, prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\rhookswarrow}}, postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\rcurvearrowse\space}}, moredelim=**[is][\btHL]{@}{@},
+}
+
 \title{ECE 6604 Design Project:\\ Performance of STBC Schemes over Rayleigh Block-Fading Channel for 4G MIMO}
 \author{Abhishek~Obla~Hema and~Klaus~Okkelberg}
 
@@ -44,47 +55,70 @@
 \bibliography{report}
 
 \appendix
-\section{Alamouti Encoding}
-\section{Alamouti Decoding}
 
-%\begin{thebibliography}{99}
-%
-%\bibitem{gupta}
-%  A. Gupta, H. S. Dhillon, S. Vishwanath, and J. G. Andrews, ``Downlink MIMO HetNets with Load Balancing'' \emph{IEEE Transactions on Communications}, Vol. 62, No. 11, pp. 4052-67, Nov. 2014.
-%
-%\bibitem{andrews}
-%  J. G. Andrews, S. Buzzi, W. Choi, S. Hanly, A. Lozano, A. Soong, and J. C. Zhang, ``What will 5G be?'', \emph{IEEE Journal on Sel. Areas in Communications}, Vol. 32, No. 6, pp. 1065-82, June 2014.
-%
-%\bibitem{dhillon}
-%  H. S. Dhillon, M. Kountouris and J. G. Andrews, ``Downlink MIMO HetNets: Modeling, Ordering Results and Performance Analysis'', \emph{IEEE Transactions on Wireless Communications}, vol. 12, no. 10, pp. 5208-5222, Oct. 2013.
-%
-%\bibitem{pappas}
-%  N. Pappas and M. Kountouris, ``Performance Analysis of Distributed Cooperation under Uncoordinated Network Interference'', \emph{IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2014}, Florence, Italy, May 4-9, 2014.
-%
-%\bibitem{goonewardena}
-%  M. Goonewardena, X. Jin, W. Ajib and H. Elbiaze, ``Competition vs. Cooperation: A Game-Theoretic Decision Analysis for MIMO HetNets'', \emph{IEEE International Conference on Communications, 2014}, Sydney, Australia, June 10-14, 2014.
-%
-%\bibitem{hoydis}
-%  J. Hoydis, S. ten Brink, and M. Debbah, ``Massive MIMO in the UL/DL of cellular networks: How many antennas do we need?'' \emph{IEEE J. Sel. Areas Commun.}, vol. 31, no. 2, pp. 160–171, Feb. 2013.
-%
-%\bibitem{hoydis2}
-%  J. Hoydis, C. Hoek, T. Wild, and S. ten Brink, ``Channel measurements for large antenna arrays,'' in \emph{Proc. IEEE International Symposium on Wireless Communication Systems}, Paris, France, Aug. 2012, pp. 811–815.
-%
-%\bibitem{bjornson}
-%  E. Bj\"ornson, M. Kountouris, and M. Debbah, ``Massive MIMO and small cells: Improving energy efficiency by optimal soft-cell coordination,'' in \emph{International Conference on Telecommunications}, Casablanca, Morocco, May 2013.
-%
-%\bibitem{stuber}
-%  St\"uber, G. L., Barry, J., McLaughlin, S. W., Li, Y., Ingram, M.A., and Pratt, T. G., ``Broadband MIMO-OFDM Wireless Communications,'' \emph{IEEE Proceedings}, pp. 271-294, April 2004.
-%
-%\bibitem{geirhofer}
-%  S. Geirhofer and P. Gaal, ``Coordinated Multi-Point Transmission in 3GPP LTE Heterogeneous Networks,'' \emph{Proc. IEEE GLOBECOM Wksp. Emerging Technologies for LTEAdvanced and Beyond-4G}, Anaheim, CA, Dec. 2012.
-%
-%\bibitem{bhushan}
-%  N. Bhushan, Junyi Li, D. Malladi, R. Gilmore, D. Brenner, A. Damnjanovic, R. Sukhavasi, C. Patel, S. Geirhofer, ``Network densification: the dominant theme for wireless evolution into 5G,'' in \emph{Communications Magazine, IEEE}, vol.52, no.2, pp.82-89, February 2014.
-%
-%\bibitem{Obaidat}
-%  \emph{Modeling and Simulation of Computer Networks and Systems: Methodologies and Applications}, M. S. Obaidat, F. Zarai, and P. Nicopolitidis, Ed., Waltham, MA: Elsevier Science, 2015.
-%
-%\end{thebibliography}
+The appendix is organized as follows. The first two sections contain functions for simulating the STBC-MIMO channel for the eight STBCs and any given modulation and demodulation methods. The code in the rest of the sections implement encoding and decoding of the various STBCs. The following sample script shows how to perform a sample simulation run.
+
+\begin{lstlisting}
+%% simulation parameters
+numPackets = 1e5; % each packets contains 120 symbols
+EbNo = 0:2:30; % in dB
+v = 5; % speed for calculating Doppler frequency in m/s
+
+%% calculate normalized Doppler frequency
+Ts = 1/15e3; % symbol rate is 15 kHz = sub-carrier spacing for LTE
+fc = 1800e6; % carrier freq of 1800 MHz
+fm_norm = v*fc/3e8*Ts; % normalized max. Doppler freq. (fm*Ts)
+
+%% modulation method
+% 16-QAM shown
+M = 16;
+hMod = comm.RectangularQAMModulator(M, ...
+    'NormalizationMethod', 'Average power', 'BitInput', true);
+hDemod = comm.RectangularQAMDemodulator(M, ...
+    'NormalizationMethod', 'Average power', 'BitOutput', true);
+% uncomment below lines for PSK
+% hMod = comm.PSKModulator(M, 'PhaseOffset', 0, ...
+%     'BitInput', true);
+% hDemod = comm.PSKDemodulator(M, 'PhaseOffset', 0, ...
+%     'BitOutput', true);
+
+%% Run simulation
+% stationary MS
+% ber = sim_flatRayleigh(EbNo,numPackets,M,hMod,hDemod);
+% moving MS
+ber = sim_flatRayleighDoppler(EbNo,numPackets,M,hMod,hDemod, ...
+    fm_norm);
+\end{lstlisting}
+
+\appendices
+
+\section{Stationary Receiver}
+\lstinputlisting{code/sim_flatRayleigh.m}
+\section{Mobile Receiver}
+\lstinputlisting{code/sim_flatRayleighDoppler.m}
+\section{MRC: $1\times2$}
+\lstinputlisting{code/fun_MRCx2.m}
+\section{Alamouti Encoding}
+\lstinputlisting{code/fun_AlamoutiEnc.m}
+\section{Alamouti Decoding: $2\times1$}
+\lstinputlisting{code/fun_AlamoutiDec2x1.m}
+\section{Alamouti Decoding: $2\times2$}
+\lstinputlisting{code/fun_AlamoutiDec2x2.m}
+\section{$C(4,4,8)$ Encoding}
+\lstinputlisting{code/fun_OSTBC2Enc4x.m}
+\section{$C(4,4,8)$ Decoding: $4\times2$}
+\lstinputlisting{code/fun_OSTBC2Dec4x2.m}
+\section{$C(4,3,4)$ Encoding}
+\lstinputlisting{code/fun_OSTBCEnc4x.m}
+\section{$C(4,3,4)$ Decoding: $4\times2$}
+\lstinputlisting{code/fun_OSTBCDec4x2.m}
+\section{$C(4,4,4)$ Encoding}
+\lstinputlisting{code/fun_QOSTBCEnc4x.m}
+\section{$C(4,4,4)$ Decoding: $4\times2$}
+\lstinputlisting{code/fun_QOSTBCDec4x2.m}
+\section{$C(8,8,16)$ Encoding}
+\lstinputlisting{code/fun_OSTBC2Enc4x.m}
+\section{$C(8,8,16)$ Decoding: $8\times2$}
+\lstinputlisting{code/fun_OSTBC2Dec4x2.m}
 
 \end{document}
