@@ -86,9 +86,115 @@ This type of system is refered to as a widely linear system~\cite{dama13,picinbo
 For QOSTBC, while the decoding is more complex than the diagonal decoding presented in \eqref{eq:mrc_decoup}, the system is still linear so a linear MMSE solution still exists. This increased decoding complexity is offset by its increased data rate over OSTBC, particularly for low $E_b/N_0$.
 
 \subsection{Examples of STBCs}
+The examples of STBCs given in this section are all for complex input constellations. These codes were chosen to give a good representation of current orthogonal or quasi-orthgonal codes, which have the advantage of being easily decodable by mobile devices using a linear MMSE solution. These examples only include $N_T\in\{2,4,8\}$, because current 4G standards only define up to eight transmit antennas and codes for other numbers of transmit antennas can be obtained by eliminating one or more columns from the transmission matrix of a code with greater $N_T$.
 
 \subsubsection{Alamouti's STBC}
-The Alamouti STBC uses two transmit antennas and any number of receive antennas.
+The Alamouti STBC uses two transmit antennas and is described by the transmission matrix
+\[ \bm{G} = \begin{bmatrix} s_1 & s_2 \\ -s_2^\ast & s_1^\ast \end{bmatrix} . \]
+This code uses two time slots to transmit two symbols over two antennas, making this a $C(2,2,2)$. The two antennas are assumed to have equal transmit power of $\Omega_p/2$ since CSIT is unknown and so the sum of their powers equals the transmit power of a singular transmit antenna.
+
+For one receive antenna and assuming block-fading, the received symbols are
+\begin{gather*}
+  y_1 = h_1 s_1 + h_2 s_2 + n_1 \\
+  y_2 = -h_1 s_2^\ast + h_2 s_1^\ast + n_2.
+\end{gather*}
+Taking the complex conjugate of the second equation yields
+\begin{gather*}
+  y_1 = h_1 s_1 + h_2 s_2 + n_1 \\
+  y_2^\ast = h_2^\ast s_1 - h_1^\ast s_2 + n_2^\ast,
+\end{gather*}
+or in matrix form,
+\[ \begin{bmatrix} y_1 \\ y_2^\ast \end{bmatrix} =
+\begin{bmatrix} h_1 & h_2 \\ h_2^\ast & -h_1^\ast \end{bmatrix}
+\begin{bmatrix} s_1 \\ s_2 \end{bmatrix} + \begin{bmatrix} n_1 \\ n_2^\ast \end{bmatrix}. \]
+The MRC output of this system is
+\begin{gather*}
+  \tilde{s}_1 = h_1^\ast y_1 + h_2 y_2^\ast \\
+  \tilde{s}_2 = h_2^\ast y_1 - h_1 y_2^\ast,
+\end{gather*}
+which can also be written as
+\begin{gather*}
+  \hat{s}_1 = (|h_1|^2+|h_2|^2) s_1 + h_1^\ast n_1 + h_2 n_2^\ast \\
+  \hat{s}_2 = (|h_1|^2+|h_2|^2) s_2 - h_1 n_2^\ast + h_2^\ast n_1.
+\end{gather*}
+The combined symbols have the expected form given by \eqref{eq:mrc_decoup}. It can be seen that the Alamouti's $2\times1$ transmit diversity scheme is equivalent to a $1\times2$ receive divesity scheme with MRC. This result can be extended to any number of receive antennas, where Alamouti's $2\times N_R$ transmit diversity scheme is equivalent to a $1\times 2N_R$ diversity with MRC~\cite{stuber12}.
+
+\subsubsection{$C(4,4,8)$}
+For $N_T=4$, Tarokh et al.\ proposed a $R=1/2$ code~\cite{tarokh99}:
+\[ \bm{G} = \begin{bmatrix}
+  s_1 & s_2 & s_3 & s_4 \\
+  -s_2 & s_1 & -s_4 & s_3 \\
+  -s_3 & s_4 & s_1 & -s_2 \\
+  -s_4 & -s_3 & s_2 & s_1 \\
+  s_1^\ast & s_2^\ast & s_3^\ast & s_4^\ast \\
+  -s_2^\ast & s_1^\ast & -s_4^\ast & s_3^\ast \\
+  -s_3^\ast & s_4^\ast & s_1^\ast & -s_2^\ast \\
+  -s_4^\ast & -s_3^\ast & s_2^\ast & s_1^\ast
+\end{bmatrix}. \]
+It can be see that the symbols transmitted during the second set of four time slots are the complex conjugates of those transmitted during the first set. In fact, a transmission matrix made up of the first four rows of this one represents a full-rate code for real constellations. This demonstrates how a $R=1/2$ code for complex constellations can be generated from any full-rate code for real constellations.
+
+\subsubsection{$C(4,3,4)$}
+To increase the bandwidth efficiency, Tarokh et al.\ also proposed a $R=3/4$ code~\cite{tarokh99}:
+\[ \bm{G} = \begin{bmatrix}
+  s_1 & s_2 & \frac{s_3}{\sqrt{2}} & \frac{s_3}{\sqrt{2}} \\
+  -s_2^\ast s_1^\ast & \frac{s_3}{\sqrt{2}} & -\frac{s_3}{\sqrt{2}} \\
+  \frac{s_3^\ast}{\sqrt{2}} & \frac{s_3^\ast}{\sqrt{2}} & \frac{-s_1-s_1^\ast+s_2-s_2^\ast}{2} & \frac{-s_2-s_2^\ast+s_1-s_1^\ast}{2} \\
+  \frac{s_3^\ast}{\sqrt{2}} & -\frac{s_3^\ast}{\sqrt{2}} & \frac{s_2+s_2^\ast+s_1-s_1^\ast}{2} & -\frac{s_1+s_1^\ast+s_2-s_2^\ast}{2}
+\end{bmatrix} \]
+Note that this code has unequal transmit power among the antennas, meaning the signal envelope is not constant and the antennas must vary their power each time slot, which is undesirable. An improved version with equal transmit power among the transmitting antennas is~\cite{ganesan01}
+\[ \bm{G} = \begin{bmatrix}
+  s_1 & s_2 & s_3 & 0 \\
+  -s_2^\ast & s_1^\ast & 0 & s_3 \\
+  s_3^\ast & 0 & -s_1^\ast & s_2 \\
+  0 & s_3^\ast & -s_2^\ast & -s_1
+\end{bmatrix}. \]
+While this code is orthogonal like the previous example and has a higher rate, it is widely linear rather than linear because there is a correlation between the transmitted symbols and their complex conjugates. Thus, this code trades increased bandwidth efficiency for increased decoding complexity.
+
+\subsubsection{$C(4,4,4)$}
+To achieve full-rate for $N_T=4$ transmit antennas, it is necessary to use a QOSTBC. One version described in~\cite{jafarkhani05} has the transmission matrix
+\[ \bm{G} = \begin{bmatrix}
+  s_1 & s_2 & s_3 & s_4 \\
+  -s_2^\ast & s_1^\ast & -s_4^\ast & s_3^\ast \\
+  s_3 & s_4 & s_1 & s_2 \\
+  -s_4^\ast & s_3^\ast & -s_2^\ast & s_1^\ast
+\end{bmatrix}. \]
+This code has full-rate but only second-order diversity. In addition, it is linearly decodable.
+
+\subsubsection{$C(8,8,16)$}
+For $N_T=8$ transmit antennas, the authors only know of $R=1/2$ codes. The first, given in~\cite{tarokh99}, has the transmission matrix
+\[ \bm{G} = \begin{bmatrix*}[r]
+  s_1 & s_2 & s_3 & s_4 & s_5 & s_6 & s_7 & s_8 \\
+  -s_2 & s_1 & s_4 & -s_3 & s_6 & -s_5 & -s_8 & s_7 \\
+  -s_3 & -s_4 & s_1 & s_2 & s_7 & s_8 & -s_5 & -s_6 \\
+  -s_4 & s_3 & -s_2 & s_1 & s_8 & -s_7 & s_6 & -s_5 \\
+  -s_5 & -s_6 & -s_7 & -s_8 & s_1 & s_2 & s_3 & s_4 \\
+  -s_6 & s_5 & -s_8 & s_7 & -s_2 & s_1 & -s_4 & s_3 \\
+  -s_7 & s_8 & s_5 & -s_6 & -s_3 & s_4 & s_1 & -s_2 \\
+  -s_8 & -s_7 & s_6 & s_5 & -s_4 & -s_3 & s_2 & s_1 \\
+  s_1^\ast & s_2^\ast & s_3^\ast & s_4^\ast & s_5^\ast & s_6^\ast & s_7^\ast & s_8^\ast \\
+  -s_2^\ast & s_1^\ast & s_4^\ast & -s_3^\ast & s_6^\ast & -s_5^\ast & -s_8^\ast & s_7^\ast \\
+  -s_3^\ast & -s_4^\ast & s_1^\ast & s_2^\ast & s_7^\ast & s_8^\ast & -s_5^\ast & -s_6^\ast \\
+  -s_4^\ast & s_3^\ast & -s_2^\ast & s_1^\ast & s_8^\ast & -s_7^\ast & s_6^\ast & -s_5^\ast \\
+  -s_5^\ast & -s_6^\ast & -s_7^\ast & -s_8^\ast & s_1^\ast & s_2^\ast & s_3^\ast & s_4^\ast \\
+  -s_6^\ast & s_5^\ast & -s_8^\ast & s_7^\ast & -s_2^\ast & s_1^\ast & -s_4^\ast & s_3^\ast \\
+  -s_7^\ast & s_8^\ast & s_5^\ast & -s_6^\ast & -s_3^\ast & s_4^\ast & s_1^\ast & -s_2^\ast \\
+  -s_8^\ast & -s_7^\ast & s_6^\ast & s_5^\ast & -s_4^\ast & -s_3^\ast & s_2^\ast & s_1^\ast
+\end{bmatrix*} \]
+
+\subsubsection{$C(8,4,8)$}
+Another code for $N_T=8$ is~\cite{larsson03}
+\[ \bm{G} = \begin{bmatrix}
+  s_1 & 0 & 0 & 0 & -s_4^\ast & 0 & -s_2^\ast & s_3^\ast \\
+  0 & s_1 & 0 & 0 & 0 & -s_4^\ast & -s_3 & -s_2 \\
+  0 & 0 & s_1 & 0 & s_2 & s_3^\ast & -s_4 & 0 \\
+  0 & 0 & 0 & s_1 & -s_3 & s_2^\ast & 0 & -s_4 \\
+  s_4 & 0 & -s_2^\ast & s_3^\ast & s_1^\ast & 0 & 0 & 0 \\
+  0 & s_4 & -s_3 & -s_2 & 0 & s_1^\ast & 0 & 0 \\
+  s_2 & s_3^\ast & s_4^\ast & 0 & 0 & 0 &s_1^\ast & 0 \\
+  -s_3 & s_2^\ast & 0 & s_4^\ast & 0 & 0 & 0 & s_1^\ast
+\end{bmatrix} \]
+While the previous two codes both have the same rate, it is expected that the $C(8,8,16)$ code will perform better since its transmission matrix is not sparse like that of $C(8,4,8)$ code, a greater diversity is expected.
+
 
 %%% Local Variables:
 %%% mode: latex
