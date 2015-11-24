@@ -3,8 +3,7 @@
 %%% TeX-master: "report"
 %%% End:
 
-
-% Section II: STBC
+% Section III: STBC
 
 With the carrier frequencies used in current 3.9G and 4G standards, only up to two receive antennas can be used while maintaining spatial diversity. Thus, it is necessary to use transmitter diversity, which uses multiple transmit antennas to provide the receiver with multiple uncorrelated copies of the same signal. Simple forms of transmit diversity include selective transmit diversity for time division duplexed systems as well as time division transmit diversity, time-switched transmit diversity, and delay transmit diversity for frequency division duplexed systems. More complex forms of transmit diversity use space-time, space-frequency, or space-time-frequency coding.
 
@@ -15,7 +14,7 @@ The multi-layered space-time architecture was introduced by Foschini in~\cite{fo
 The remainder of this section presents a mathematical model for a general MIMO system using STBC and details ML decoding methods for both linear and widely linear coding schemes. Additionally, some examples of STBCs are reviewed with emphasis on the code transmission matrix and the code parameters.
 
 \subsection{Space-Time Block Coded MIMO System}
-This paper considers digital wireless transmissions through a general MIMO system with $N_T$ transmit antennas and $N_R$ receive antennas, consisting of a ST encoder, a Rayleigh block-fading channel with AWGN, and a ST decoder with MRC and ML decoding. The channel is modeled as a discrete-time baseband-equivalent channel. This study assumes single-carrier modulated block transmission with zero padding is used to suppress intersymbol interference, as in~\cite{wang00,wang04} and uncorrelated path gains for the receive antennas.
+This paper considers digital wireless transmissions through a general MIMO system with $N_T$ transmit antennas and $N_R$ receive antennas, consisting of a ST encoder, a Rayleigh block-fading channel with AWGN, and a ST decoder with MRC and ML decoding. The channel is modeled as a discrete-time baseband-equivalent channel. This study assumes single-carrier modulated block transmission with zero padding is used to suppress intersymbol interference (ISI) and prevent inter-channel interference (ICI), as in~\cite{wang00,wang04} and uncorrelated path gains for the receive antennas.
 
 \subsubsection{Space-Time Encoding}
 Assume that the input to the ST encoder is a $k$-dimensional vector of complex symbols $\bm{s}=[s_1\,s_2\,\cdots\,s_k]\trans$. The encoding method for the STBC is defined by its transmission matrix in the form 
@@ -87,7 +86,9 @@ For a nonlinearly decodable ST code where $\bm{x}$ and its complex conjugate $\b
 \[ \begin{bmatrix} \bar{\bm{y}} \\ \bar{\bm{y}}^\ast \end{bmatrix}
 = \begin{bmatrix} \bm{H}_1 & \bm{H}_2 \\ \bm{H}_2^\ast & \bm{H}_1^\ast \end{bmatrix}
 \begin{bmatrix*}[l] \bm{x} \\ \bm{x}^\ast\end{bmatrix*} + \begin{bmatrix} \bar{\bm{n}} \\ \bar{\bm{n}}^\ast \end{bmatrix} . \]
-This type of system is refered to as a widely linear system~\cite{dama13,picinbono95}. Then, the MMSE solution to this system is given by the pseudo-inverse as before and the ML decoding of the input symbols is given by the first half of the augmented input vector.
+This type of system is refered to as a widely linear system~\cite{dama13,picinbono95}. It can be see that the equivalent channel matrix has four times as many elements of the linear system and is given by
+\[ \bm{H}_{ef} = \begin{bmatrix} \bm{H}_1 & \bm{H}_2 \\ \bm{H}_2^\ast & \bm{H}_1^\ast \end{bmatrix}. \]
+Then, the MMSE solution to this system is given by the pseudo-inverse of the equivalent channel matrix as before, and the ML decoding of the input symbols is given by the first half of the augmented input vector.
 
 For QOSTBC, while the decoding is more complex than the diagonal decoding presented in \eqref{eq:mrc_decoup}, the system is still linear so a linear MMSE solution still exists. This increased decoding complexity is offset by its increased data rate over OSTBC, particularly for low $E_b/N_0$.
 
