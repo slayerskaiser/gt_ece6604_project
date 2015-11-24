@@ -21,6 +21,14 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{TR36.912}
+\BIBentryALTinterwordspacing
+3GPP, ``{Feasibility study for Further Advancements for E-UTRA
+  (LTE-Advanced)},'' {3rd Generation Partnership Project (3GPP)}, TR {36.912},
+  06 2010. [Online]. Available:
+  \url{http://www.3gpp.org/ftp/Specs/html-info/36912.htm}
+\BIBentrySTDinterwordspacing
+
 \bibitem{caire03}
 G.~Caire and S.~Shamai, ``On the achievable throughput of a multi-antenna
   {Gaussian} broadcast channel,'' \emph{IEEE Trans.\ Inf.\ Theory}, July 2003.

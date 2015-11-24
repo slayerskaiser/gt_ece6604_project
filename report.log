@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.8.5)  24 NOV 2015 03:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.8.5)  24 NOV 2015 06:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -209,6 +209,34 @@ Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
 LaTeX Info: Redefining \bm on input line 203.
 )
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count110
+))
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
+)
 (/usr/share/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
@@ -368,23 +396,23 @@ LaTeX Font Info:    Redeclaring math accent \widetilde on input line 1846.
 LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count110
+\lst@mode=\count111
 \lst@gtempboxa=\box30
 \lst@token=\toks21
-\lst@length=\count111
-\lst@currlwidth=\dimen143
-\lst@column=\count112
-\lst@pos=\count113
-\lst@lostspace=\dimen144
-\lst@width=\dimen145
-\lst@newlines=\count114
-\lst@lineno=\count115
-\lst@maxwidth=\dimen146
+\lst@length=\count112
+\lst@currlwidth=\dimen145
+\lst@column=\count113
+\lst@pos=\count114
+\lst@lostspace=\dimen146
+\lst@width=\dimen147
+\lst@newlines=\count115
+\lst@lineno=\count116
+\lst@maxwidth=\dimen148
 
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count116
-\lst@skipnumbers=\count117
+\c@lstnumber=\count117
+\lst@skipnumbers=\count118
 \lst@framebox=\box31
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
@@ -394,66 +422,41 @@ Package: listings 2014/09/06 1.5e (Carsten Heinz)
  (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 31.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    ... okay on input line 31.
 
--- Lines per column: 50 (exact).
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
-)
-Package graphics Info: Driver file: pdftex.def on input line 91.
-
-(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count118
-
+-- Lines per column: 48 (exact).
 (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
-\scratchdimen=\dimen147
+\scratchdimen=\dimen149
 \scratchbox=\box32
 \nofMPsegments=\count120
 \nofMParguments=\count121
 \everyMPshowfont=\toks22
 \MPscratchCnt=\count122
-\MPscratchDim=\dimen148
+\MPscratchDim=\dimen150
 \MPnumerator=\count123
 \makeMPintoPDFobject=\count124
 \everyMPtoPDFconversion=\toks23
-))) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
@@ -501,20 +504,9 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\Gin@req@height=\dimen149
-\Gin@req@width=\dimen150
-)
 \c@lstlisting=\count125
  (./sec1.tex
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no — in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
@@ -522,121 +514,104 @@ Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-) (./sec2.tex
-[3]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
+) (./sec2.tex
+[3] [4] <images/MIMO_System.jpg, id=25, 366.61969pt x 278.54062pt>
+File: images/MIMO_System.jpg Graphic file (type jpg)
+
+<use images/MIMO_System.jpg>
+Package pdftex.def Info: images/MIMO_System.jpg used on input line 34.
+(pdftex.def)             Requested size: 309.60315pt x 235.23482pt.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
- [4]) (./sec3.tex [5] [6] [7]
+Missing character: There is no ™ in font ptmr7t!
+ [5 <./images/MIMO_System.jpg>]
+<images/SISO.jpg, id=29, 303.38344pt x 183.68625pt>
+File: images/SISO.jpg Graphic file (type jpg)
+ <use images/SISO.jpg>
+Package pdftex.def Info: images/SISO.jpg used on input line 52.
+(pdftex.def)             Requested size: 206.39685pt x 124.96663pt.
+
+<images/SIMO.jpg, id=30, 304.13625pt x 166.37157pt>
+File: images/SIMO.jpg Graphic file (type jpg)
+ <use images/SIMO.jpg>
+Package pdftex.def Info: images/SIMO.jpg used on input line 54.
+(pdftex.def)             Requested size: 206.39685pt x 112.90775pt.
+
+<images/MISO.jpg, id=31, 312.41719pt x 177.66376pt>
+File: images/MISO.jpg Graphic file (type jpg)
+ <use images/MISO.jpg>
+Package pdftex.def Info: images/MISO.jpg used on input line 56.
+(pdftex.def)             Requested size: 206.39685pt x 117.375pt.
+
+<images/MIMO.jpg, id=32, 299.61937pt x 175.40532pt>
+File: images/MIMO.jpg Graphic file (type jpg)
+ <use images/MIMO.jpg>
+Package pdftex.def Info: images/MIMO.jpg used on input line 58.
+(pdftex.def)             Requested size: 206.39685pt x 120.83173pt.
+
+[6 <./images/SISO.jpg> <./images/SIMO.jpg> <./images/MISO.jpg> <./images/MIMO.j
+pg>]) (./sec3.tex [7] [8]
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 82.
-
-(/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+ (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [8] [9] [10]) (./sec4.tex)
-(./sec5.tex) (./sec6.tex) (./report.bbl [11])
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 61.
-
-(/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+)
+[9] [10] [11]) (./sec4.tex [12]) (./sec5.tex) (./sec6.tex) (./report.bbl
+[13])
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 63.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [12]
-(./code/sim_flatRayleigh.m
-! Undefined control sequence.
-<argument> \def \lst@currstyle {}\btHL 
-                                       
-l.11 call_wb = @
-                (x,count) fprintf([repmat('\b',1,count) ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+) [14]
+(./code/sim_flatRayleigh.m [15] [16] [17]) (./code/sim_flatRayleighDoppler.m
+[18] [19] [20] [21]) (./code/fun_MRCx2.m) (./code/fun_AlamoutiEnc.m [22])
+(./code/fun_AlamoutiDec2x1.m) (./code/fun_AlamoutiDec2x2.m) [23]
+(./code/fun_OSTBC2Enc4x.m) (./code/fun_OSTBC2Dec4x2.m [24]) [25]
+(./code/fun_OSTBCEnc4x.m) (./code/fun_OSTBCDec4x2.m [26])
+(./code/fun_QOSTBCEnc4x.m [27]) (./code/fun_QOSTBCDec4x2.m) [28]
+(./code/fun_OSTBC2Enc4x.m) (./code/fun_OSTBC2Dec4x2.m [29])
 
-[13] [14] [15]) (./code/sim_flatRayleighDoppler.m [16]
-! Undefined control sequence.
-<argument> \def \lst@currstyle {}\btHL 
-                                       
-l.11 call_wb = @
-                (x,count) fprintf([repmat('\b',1,count) ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
 
-[17]
-! Undefined control sequence.
-<argument> \def \lst@currstyle {}\btHL 
-                                       
-l.80         tmp = bsxfun(@
-                           plus, phi, bsxfun(@times, cos(theta), ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
 
-! Undefined control sequence.
-<argument> \def \lst@currstyle {}\btHL 
-                                       
-l.82         gI = sum( bsxfun(@
-                               times, cos(beta), cos(tmp)), 3);
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
 
-[18] [19]
-! Undefined control sequence.
-<argument> \def \lst@currstyle {}\btHL 
-                                       
-l.175 ber = cellfun(@
-                     (x) x(1,:), ber, 'uni', 0);
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) (./code/fun_MRCx2.m) (./code/fun_AlamoutiEnc.m [20])
-(./code/fun_AlamoutiDec2x1.m) (./code/fun_AlamoutiDec2x2.m [21])
-(./code/fun_OSTBC2Enc4x.m) (./code/fun_OSTBC2Dec4x2.m [22]) [23]
-(./code/fun_OSTBCEnc4x.m) (./code/fun_OSTBCDec4x2.m [24])
-(./code/fun_QOSTBCEnc4x.m [25]) (./code/fun_QOSTBCDec4x2.m)
-(./code/fun_OSTBC2Enc4x.m [26]) (./code/fun_OSTBC2Dec4x2.m [27]) [28]
-(./report.aux) ) 
+[30] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 6844 strings out of 495024
- 99856 string characters out of 6181991
- 365926 words of memory out of 5000000
- 9898 multiletter control sequences out of 15000+600000
+ 6875 strings out of 495024
+ 100423 string characters out of 6181991
+ 373802 words of memory out of 5000000
+ 9922 multiletter control sequences out of 15000+600000
  45929 words of font info for 99 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 51i,9n,32p,1613b,1468s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{
-/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/
-enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbo
-l/MnSymbolE.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{
-/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}</usr/share/texmf-
-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/mnsymbol/MnSymbol6.pfb></usr/share/texmf-dist/fonts/type1/public/mns
-ymbol/MnSymbol8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-d
-ist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/t
-imes/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
-hare/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (28 pages, 245943 bytes).
+ 38i,9n,32p,1381b,1402s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.
+enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/f
+onts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mn
+symbol/MnSymbolE.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.
+enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}</usr/share/t
+exmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/mnsymbol/MnSymbol6.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/mnsymbol/MnSymbol8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/
+urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
+usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on report.pdf (30 pages, 347032 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
+ 184 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
