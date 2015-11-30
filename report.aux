@@ -2,7 +2,7 @@
 \bibstyle{IEEEtran}
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {I-A}}LTE}{1}}
-\citation{TR36.912}
+\citation{TR36_912}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {I-B}}LTE-A}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {I-C}}Impact of LTE on Battery Life}{3}}
 \@writefile{toc}{\contentsline {section}{\numberline {II}MIMO and Diversity}{3}}
@@ -25,10 +25,10 @@
 \citation{tarokh99}
 \citation{wang00,wang04}
 \citation{tarokh99}
+\citation{alamouti98}
 \@writefile{toc}{\contentsline {section}{\numberline {III}Space-Time Block Coding}{7}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Space-Time Block Coded MIMO System}{7}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-A}1}Space-Time Encoding}{7}}
-\citation{alamouti98}
 \citation{seberry05,wolfe76}
 \citation{tarokh99}
 \citation{jafarkhani05}
@@ -60,4 +60,63 @@
 \newlabel{fig:result1}{{3}{14}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Comparison of BER versus $E_b/N_0$ for $N_T=4$ and stationary receiver.}}{14}}
 \newlabel{fig:result2}{{4}{14}}
-\@writefile{lof}{\contentsline {figure}{\numb
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Comparison of BER versus $E_b/N_0$ for various $N_T$ and stationary receiver.}}{15}}
+\newlabel{fig:result3}{{5}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Comparison of BER versus $E_b/N_0$ for QPSK, small MIMO, and moving receiver.}}{15}}
+\newlabel{fig:result4a}{{6}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Comparison of BER versus $E_b/N_0$ for QPSK, $N_T=4$, and moving receiver.}}{16}}
+\newlabel{fig:result4b}{{7}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Comparison of BER versus $E_b/N_0$ for QPSK, various $N_T$, and moving receiver.}}{16}}
+\newlabel{fig:result5}{{8}{16}}
+\bibdata{report}
+\bibcite{TR36_912}{1}
+\bibcite{caire03}{2}
+\bibcite{weingarten06}{3}
+\bibcite{nasseri10}{4}
+\bibcite{bjornson10}{5}
+\bibcite{biguesh06}{6}
+\bibcite{foschini96}{7}
+\bibcite{tarokh98}{8}
+\bibcite{alamouti98}{9}
+\bibcite{tarokh99}{10}
+\bibcite{wang00}{11}
+\bibcite{wang04}{12}
+\bibcite{seberry05}{13}
+\bibcite{wolfe76}{14}
+\bibcite{jafarkhani05}{15}
+\bibcite{larsson03}{16}
+\bibcite{dama13}{17}
+\bibcite{picinbono95}{18}
+\bibcite{stuber12}{19}
+\bibcite{ganesan01}{20}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Summary}{17}}
+\@writefile{toc}{\contentsline {section}{References}{17}}
+\@writefile{toc}{\contentsline {section}{Appendix}{18}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}A: Stationary Receiver}{18}}
+\@writefile{lol}{\contentsline {lstlisting}{code/sim\textunderscore flatRayleigh.m}{18}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}B: Mobile Receiver}{22}}
+\@writefile{lol}{\contentsline {lstlisting}{code/sim\textunderscore flatRayleighDoppler.m}{22}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}C: MRC: $1\times 2$}{26}}
+\@writefile{lol}{\contentsline {lstlisting}{code/fun\textunderscore MRCx2.m}{26}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}D: Alamouti Encoding}{26}}
+\@writefile{lol}{\contentsline {lstlisting}{code/fun\textunderscore AlamoutiEnc.m}{26}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}E: Alamouti Decoding: $2\times 1$}{26}}
+\@writefile{lol}{\contentsline {lstlisting}{code/fun\textunderscore AlamoutiDec2x1.m}{26}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}F: Alamouti Decoding: $2\times 2$}{27}}
+\@writefile{lol}{\contentsline {lstlisting}{code/fun\textunderscore AlamoutiDec2x2.m}{27}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}G: $C(4,4,8)$ Encoding}{27}}
+\@writefile{lol}{\contentsline {lstlisting}{code/fun\textunderscore OSTBC2Enc4x.m}{27}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}H: $C(4,4,8)$ Decoding: $4\times 2$}{28}}
+\@writefile{lol}{\contentsline {lstlisting}{code/fun\textunderscore OSTBC2Dec4x2.m}{28}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}I: $C(4,3,4)$ Encoding}{29}}
+\@writefile{lol}{\contentsline {lstlisting}{code/fun\textunderscore OSTBCEnc4x.m}{29}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}J: $C(4,3,4)$ Decoding: $4\times 2$}{30}}
+\@writefile{lol}{\contentsline {lstlisting}{code/fun\textunderscore OSTBCDec4x2.m}{30}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}K: $C(4,4,4)$ Encoding}{31}}
+\@writefile{lol}{\contentsline {lstlisting}{code/fun\textunderscore QOSTBCEnc4x.m}{31}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}L: $C(4,4,4)$ Decoding: $4\times 2$}{31}}
+\@writefile{lol}{\contentsline {lstlisting}{code/fun\textunderscore QOSTBCDec4x2.m}{31}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}M: $C(8,8,16)$ Encoding}{32}}
+\@writefile{lol}{\contentsline {lstlisting}{code/fun\textunderscore OSTBC2Enc4x.m}{32}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}N: $C(8,8,16)$ Decoding: $8\times 2$}{33}}
+\@writefile{lol}{\contentsline {lstlisting}{code/fun\textunderscore OSTBC2Dec4x2.m}{33}}
